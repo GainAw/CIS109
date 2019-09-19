@@ -5,7 +5,6 @@ Udemy: 17 Begining c# walkthrough Projects Step by Step
 Project 1: Create a Matching pairs icon image Game
 */
 
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +41,7 @@ namespace MatchingGame
                     int random_number = random.Next(icons.Count);
                     icon_label.Text = icons[random_number];
 
-                    //icon_label.ForeColor = icon_label.BackColor;
+                    icon_label.ForeColor = icon_label.BackColor;
                     icons.RemoveAt(random_number);
                 }
 
