@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CIS109_MatchingGame/MatchingGame/.vs/MatchingGame/v16
+/CIS109_MatchingGame/MatchingGame/obj/Debug
