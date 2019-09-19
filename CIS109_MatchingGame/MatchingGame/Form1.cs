@@ -29,6 +29,26 @@ namespace MatchingGame
         public Form_Matching_Game()
         {
             InitializeComponent();
+            AssignIcontoSquares();
+        }
+
+        private void AssignIcontoSquares()
+        {
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                Label icon_label = control as Label;
+                if (icon_label != null)
+                {
+                    int random_number = random.Next(icons.Count);
+                    icon_label.Text = icons[random_number];
+
+                    //icon_label.ForeColor = icon_label.BackColor;
+                    icons.RemoveAt(random_number);
+                }
+
+            }
+
+
         }
     }
 }
