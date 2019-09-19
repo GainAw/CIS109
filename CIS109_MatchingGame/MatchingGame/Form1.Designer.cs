@@ -32,9 +32,10 @@
             // 
             // Form_Matching_Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 479);
+            this.ClientSize = new System.Drawing.Size(534, 511);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_Matching_Game";
             this.Text = "Matching Game";
             this.ResumeLayout(false);
