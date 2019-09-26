@@ -76,10 +76,12 @@ namespace MatchingGame
             {
                 return;
             }
+
             if (clickedLabel.ForeColor == Color.Black)
             {
                 return;
             }
+
             if (First_Clicked == null)
             {
                 First_Clicked = clickedLabel;
@@ -90,7 +92,32 @@ namespace MatchingGame
             Second_Clicked = clickedLabel;
             Second_Clicked.ForeColor = Color.Black;
 
-            timer1.Start();
+            Check_For_Winner();
+
+            if (First_Clicked.Text == Second_Clicked.Text)
+            {
+                First_Clicked = null;
+                Second_Clicked = null;
+            }
+            else
+            {
+                timer1.Start();
+            }
+        }
+        private void Check_For_Winner()
+        {
+            Label label;
+            for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
+            {
+                label = tableLayoutPanel1.Controls[i] as Label;
+
+                if (label != null && label.ForeColor == label.BackColor)
+                {
+                    return;
+                }
+            }
+            MessageBox.Show("You won congrats");
+            Close();
         }
     }
 }
