@@ -25,6 +25,9 @@ namespace MatchingGame
             "!", "!", ".", ".", "T", "T", "W", "W",
             "k", "k", "|", "|", "@", "@", "%", "%"
         };
+
+        Label First_Clicked, Second_Clicked;
+
         public Form_Matching_Game()
         {
             InitializeComponent();
@@ -48,6 +51,46 @@ namespace MatchingGame
             }
 
 
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+
+            First_Clicked.ForeColor = First_Clicked.BackColor;
+            Second_Clicked.ForeColor = Second_Clicked.BackColor;
+
+            First_Clicked = null;
+            Second_Clicked = null;
+        }
+
+        private void Label_Click(object sender, EventArgs e)
+        {
+            if (First_Clicked != null && Second_Clicked != null)
+            {
+                return;
+            }
+
+            Label clickedLabel = sender as Label;
+            if (clickedLabel == null)
+            {
+                return;
+            }
+            if (clickedLabel.ForeColor == Color.Black)
+            {
+                return;
+            }
+            if (First_Clicked == null)
+            {
+                First_Clicked = clickedLabel;
+                First_Clicked.ForeColor = Color.Black;
+                return;
+            }
+
+            Second_Clicked = clickedLabel;
+            Second_Clicked.ForeColor = Color.Black;
+
+            timer1.Start();
         }
     }
 }
