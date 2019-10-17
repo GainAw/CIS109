@@ -16,5 +16,30 @@ namespace PictureViewer
         {
             InitializeComponent();
         }
+
+        private void Close_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SetBGColor_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearPicture_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowPicture_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Stretched_Bool_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
