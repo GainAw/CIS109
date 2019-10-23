@@ -34,7 +34,10 @@ namespace PictureViewer
 
         private void ShowPicture_Button_Click(object sender, EventArgs e)
         {
-
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Load(openFileDialog1.FileName);
+            }
         }
 
         private void Stretched_Bool_CheckedChanged(object sender, EventArgs e)
