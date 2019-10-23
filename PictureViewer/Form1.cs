@@ -19,17 +19,20 @@ namespace PictureViewer
 
         private void Close_Button_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void SetBGColor_Button_Click(object sender, EventArgs e)
         {
-
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.BackColor = colorDialog1.Color;
+            }
         }
 
         private void ClearPicture_Button_Click(object sender, EventArgs e)
         {
-
+            pictureBox1.Image = null;
         }
 
         private void ShowPicture_Button_Click(object sender, EventArgs e)
@@ -42,7 +45,14 @@ namespace PictureViewer
 
         private void Stretched_Bool_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (Stretched_Bool.Checked)
+            {
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+            }
         }
     }
 }
