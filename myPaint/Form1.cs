@@ -21,7 +21,7 @@ namespace myPaint
             InitializeComponent();
         }
 
-        private void PictureBox1_MouseClick(object sender, MouseEventArgs e)
+        private void PictureBox1_MouseToggle(object sender, MouseEventArgs e)
         {
             if (drawing)
             {
