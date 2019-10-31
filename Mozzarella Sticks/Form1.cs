@@ -21,5 +21,28 @@ namespace Mozzarella_Sticks
         {
 
         }
+
+        private void Search_Bar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                webBrowser1.Navigate(Search_Bar.Text);
+            }
+        }
+
+        private void Back_Button_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        private void Forward_Button_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        private void Go_Button_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(Search_Bar.Text);
+        }
     }
 }

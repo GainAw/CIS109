@@ -69,6 +69,7 @@
             this.Back_Button.Name = "Back_Button";
             this.Back_Button.Size = new System.Drawing.Size(36, 22);
             this.Back_Button.Text = "Back";
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
             // Forward_Button
             // 
@@ -78,6 +79,7 @@
             this.Forward_Button.Name = "Forward_Button";
             this.Forward_Button.Size = new System.Drawing.Size(54, 22);
             this.Forward_Button.Text = "Forward";
+            this.Forward_Button.Click += new System.EventHandler(this.Forward_Button_Click);
             // 
             // toolStripSeparator1
             // 
@@ -88,6 +90,7 @@
             // 
             this.Search_Bar.Name = "Search_Bar";
             this.Search_Bar.Size = new System.Drawing.Size(121, 25);
+            this.Search_Bar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Search_Bar_KeyDown);
             // 
             // Go_Button
             // 
@@ -97,6 +100,7 @@
             this.Go_Button.Name = "Go_Button";
             this.Go_Button.Size = new System.Drawing.Size(26, 22);
             this.Go_Button.Text = "Go";
+            this.Go_Button.Click += new System.EventHandler(this.Go_Button_Click);
             // 
             // Main_Form
             // 
