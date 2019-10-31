@@ -58,6 +58,7 @@
             this.Button_Num7.TabIndex = 0;
             this.Button_Num7.Text = "7";
             this.Button_Num7.UseVisualStyleBackColor = false;
+            this.Button_Num7.Click += new System.EventHandler(this.Click_Button);
             // 
             // Button_Divide
             // 

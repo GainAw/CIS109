@@ -16,5 +16,10 @@ namespace myCalculator
         {
             InitializeComponent();
         }
+
+        private void Click_Button(object sender, EventArgs e)
+        {
+            Results_Box.Text = Results_Box.Text + "7";
+        }
     }
 }
