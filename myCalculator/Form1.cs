@@ -19,7 +19,8 @@ namespace myCalculator
 
         private void Click_Button(object sender, EventArgs e)
         {
-            Results_Box.Text = Results_Box.Text + "7";
+            Button button = (Button)sender;
+            Results_Box.Text = Results_Box.Text + button.Text;
         }
     }
 }
