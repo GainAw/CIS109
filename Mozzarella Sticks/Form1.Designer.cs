@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -36,6 +37,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Search_Bar = new System.Windows.Forms.ToolStripComboBox();
             this.Go_Button = new System.Windows.Forms.ToolStripButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,11 +57,14 @@
             // 
             // webBrowser1
             // 
+            this.webBrowser1.ContextMenuStrip = this.contextMenuStrip1;
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
             this.webBrowser1.Location = new System.Drawing.Point(0, 25);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(800, 425);
             this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.WebBrowser1_DocumentCompleted);
             // 
             // Back_Button
             // 
@@ -88,6 +93,7 @@
             // 
             // Search_Bar
             // 
+            this.Search_Bar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
             this.Search_Bar.Name = "Search_Bar";
             this.Search_Bar.Size = new System.Drawing.Size(121, 25);
             this.Search_Bar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Search_Bar_KeyDown);
@@ -101,6 +107,11 @@
             this.Go_Button.Size = new System.Drawing.Size(26, 22);
             this.Go_Button.Text = "Go";
             this.Go_Button.Click += new System.EventHandler(this.Go_Button_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Main_Form
             // 
@@ -128,6 +139,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripComboBox Search_Bar;
         private System.Windows.Forms.ToolStripButton Go_Button;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

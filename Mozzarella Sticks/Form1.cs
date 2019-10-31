@@ -44,5 +44,10 @@ namespace Mozzarella_Sticks
         {
             webBrowser1.Navigate(Search_Bar.Text);
         }
+
+        private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            Text = "Mozzarella Sticks - " + webBrowser1.Document.Title;
+        }
     }
 }
