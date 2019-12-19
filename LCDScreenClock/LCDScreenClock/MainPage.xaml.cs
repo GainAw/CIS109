@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Devices.I2c;
 using Windows.Devices.Gpio;
 using Windows.Devices.Enumeration;
+using System.Threading;
 
 
 namespace LCDScreenClock
@@ -27,7 +28,16 @@ namespace LCDScreenClock
             this.InitializeComponent();
 			displayI2C lcd = new displayI2C(0x27, "I2C1", 0, 1, 2, 4, 5, 6, 7, 3);
 			lcd.init();
-			lcd.prints("1968");
+			while (true)
+			{
+				float Hour = DateTime.Now.Hour;
+				float Min = DateTime.Now.Minute;
+				float Sec = DateTime.Now.Second;
+				lcd.gotoxy(4,0);
+				lcd.prints(Hour + ":" + Min + ":" + Sec);
+				Thread.Sleep(1000);
+				lcd.clrscr();
+			}
 		}
     }
 }

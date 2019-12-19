@@ -1,1 +1,1 @@
-C:\Users\Wesley Crank\Documents\CIS109\LCDScreenClock\LCDScreenClock\LCDScreenClock.csproj;arm
+C:\Users\wescr\Documents\VisualStudioProjects\LCDScreenClock\LCDScreenClock\LCDScreenClock.csproj;arm

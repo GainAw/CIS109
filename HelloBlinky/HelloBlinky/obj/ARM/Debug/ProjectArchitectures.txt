@@ -1,1 +1,1 @@
-C:\Users\Wesley Crank\Documents\CIS109\HelloBlinky\HelloBlinky\HelloBlinky.csproj;arm
+C:\Users\wescr\Documents\VisualStudioProjects\HelloBlinky\HelloBlinky\HelloBlinky.csproj;arm

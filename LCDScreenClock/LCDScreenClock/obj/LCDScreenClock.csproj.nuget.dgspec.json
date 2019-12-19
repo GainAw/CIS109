@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wesley Crank\\Documents\\CIS109\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj": {}
+    "C:\\Users\\wescr\\Documents\\VisualStudioProjects\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wesley Crank\\Documents\\CIS109\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj": {
+    "C:\\Users\\wescr\\Documents\\VisualStudioProjects\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wesley Crank\\Documents\\CIS109\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj",
+        "projectUniqueName": "C:\\Users\\wescr\\Documents\\VisualStudioProjects\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj",
         "projectName": "LCDScreenClock",
-        "projectPath": "C:\\Users\\Wesley Crank\\Documents\\CIS109\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj",
-        "packagesPath": "C:\\Users\\Wesley Crank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wesley Crank\\Documents\\CIS109\\LCDScreenClock\\LCDScreenClock\\obj\\",
+        "projectPath": "C:\\Users\\wescr\\Documents\\VisualStudioProjects\\LCDScreenClock\\LCDScreenClock\\LCDScreenClock.csproj",
+        "packagesPath": "C:\\Users\\wescr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wescr\\Documents\\VisualStudioProjects\\LCDScreenClock\\LCDScreenClock\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Wesley Crank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wescr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
